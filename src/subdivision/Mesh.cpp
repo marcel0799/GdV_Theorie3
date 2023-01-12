@@ -64,6 +64,64 @@ void SubdivisionMesh::subdivide()
       *         for(auto hv : halfedges(v)) -->  loop through all outgoing halfedges of `Vertex v`
       */
 
+    // i) New face vertices
+    //schleife ueber alle faces, weil wir alle mittelpunkte bestimmen wollen
+    for(auto f: faces()) {
+        vec3 p(0,0,0); //ein neuer Punkt den wir ausrechnen wollen mit 0,0,0 initializiert
+        double ctr = 0; //counter variable zum zaehlen
+        for(auto v : vertices(f)) { //ueber alle vetices vom face f
+            p += points[v]; //alle punkte aufsummieren, entspricht der summe aus der formel
+            ctr ++;
+        } 
+        p /= ctr;
+        fpoint[f] = p;
+    }
+
+    // ii) new edge vertices
+    // die neuen kanten oder so
+    // wichtig ist, ist es eine innere kante oder eine rand kante, dass bestimmen wir ueber catmull clark halbkanten dings
+    for(auto e : edges()) {
+        vec3 p(0,0,0); //wieder der punkt den wir berechnen wollen
+        //ueber vertex(e,0) und vertex(e,1) kriegen wir den anfangs und endpunkt der kante
+        //durch das teilen können wir dann den mittelpunkt bestimmen
+        // wie teilen ergibt sich aus dem subdivision zeugs, also welches netz wir haben
+        Vertex v0 = vertex(e,0); //anfangs knoten der kante
+        Vertex v1 = vertex(e,1); //endpunkt der Kante
+        p += points[v0] + points[v1];
+        if(is_boundary(e)) { //wenn es eine randkante ist
+            epoint[e] = 0.5 * p; //mittelpunkt berechnen oder so
+        } else {
+            Face f0 = face(e,0); //kein plan
+            Face f1 = face(e,1);
+            epoint[e] = 0.25 * (p + fpoint[f0] + fpoint [f1]);
+        }
+    }
+
+    // 3) update old vertex positions
+    for(auto v : vertices()) {
+        vec3 p(0,0,0);
+        if(is_boundary(v)) {
+            for(auto vv : vertices(v)) {
+                if(is_boundary(vv)) {
+                    p += 0.125 * points[vv];
+                }
+            }
+            p += 0.75 * points[v];
+        } else  {
+            //valenc of the vertex
+            double k = valence(v);
+            vec3 p(0,0,0);
+            for(auto f : faces(v)) {
+                p +=  (1.0 / (k*k)) * fpoint[f];
+            }
+            for(auto vv : vertices(v)) {
+                p +=  (1.0 / (k*k)) * points[vv];    
+            }
+            p += ((k-2.0) / k) * points[v];
+            vpoint[v] = p;
+        }
+    }
+
 
     // assign new positions to old vertices
     for (auto v : vertices())
