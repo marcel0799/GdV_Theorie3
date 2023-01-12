@@ -1,0 +1,398 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "MinSizeRel/bezier.exe"
+		},
+		{
+			"path" : "MinSizeRel/bezier.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_compile_options",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"src/bezier/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 47,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 49,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 109,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 41,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 83,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 108,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 120,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 129,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 137,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 146,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 147,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc -D_USE_MATH_DEFINES -DNOMINMAX -D_CRT_SECURE_NO_WARNINGS -openmp /MD /O1 /Ob1 /DNDEBUG"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4267"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/wd4244"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/wd4305"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/wd4005"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\""
+				},
+				{
+					"backtrace" : 9,
+					"define" : "GLEW_STATIC"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "IMGUI_IMPL_OPENGL_LOADER_GLEW"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/external/stb_image"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/external/glfw/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/external/glfw/deps"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/external/glew/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/external/imgui"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/external/eigen"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/external"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/marce/Desktop/cg-bezier-subdivision/src"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/usr/local/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "pmp_vis::@f55943f0ac314c64b061"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "pmp::@23f78472626e0e4d3e15"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "imgui::@408438dda4a3eccc02b1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glew::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "stb_image::@4945d4a35979c2c9c488"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@ca12bac854c2ac6b2230"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "bezier::@e176da5a4d68a80877a9",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc -D_USE_MATH_DEFINES -DNOMINMAX -D_CRT_SECURE_NO_WARNINGS -openmp /MD /O1 /Ob1 /DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64  /INCREMENTAL:NO /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\MinSizeRel\\pmp_vis.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\MinSizeRel\\imgui.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\MinSizeRel\\glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "..\\..\\MinSizeRel\\glew.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\..\\MinSizeRel\\pmp.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\..\\MinSizeRel\\stb_image.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "glu32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "bezier",
+	"nameOnDisk" : "bezier.exe",
+	"paths" : 
+	{
+		"build" : "src/bezier",
+		"source" : "src/bezier"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/bezier/BezierViewer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/bezier/Main_Bezier.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/bezier/bezier_patch.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/bezier/bezier_surface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/bezier/BezierViewer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/bezier/bezier_patch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/bezier/bezier_surface.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

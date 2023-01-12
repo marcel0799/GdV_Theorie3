@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\marce\Desktop\cg-bezier-subdivision\build\CMakeFiles\e3ed306e3fac6a1e9c4521fe789b57c5\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\marce\Desktop\cg-bezier-subdivision\build\external\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A0F0DE32-8566-39F8-A711-3B98F0ED01AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BA48D4DD-5FEC-3386-BA7E-7CFE7BB7BDB2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\BezierViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\Main_Bezier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\bezier_patch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\bezier_surface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\BezierViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\bezier_patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\bezier_surface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\marce\Desktop\cg-bezier-subdivision\src\bezier\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BA48D4DD-5FEC-3386-BA7E-7CFE7BB7BDB2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D7A03A5-17EE-31B2-953F-026B1EB5CE61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
