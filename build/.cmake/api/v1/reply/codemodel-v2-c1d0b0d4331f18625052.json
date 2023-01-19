@@ -1,0 +1,1268 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "external/stb_image",
+					"jsonFile" : "directory-external.stb_image-Debug-22e4301351593e9d71bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/stb_image",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "external/glfw",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.glfw-Debug-32262a0c72daaba76ac5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/glfw",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "external/glfw/src",
+					"jsonFile" : "directory-external.glfw.src-Debug-1c6013c09899f4bbf608.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "external/glfw/src",
+					"targetIndexes" : 
+					[
+						5,
+						11
+					]
+				},
+				{
+					"build" : "external/imgui",
+					"jsonFile" : "directory-external.imgui-Debug-8f2cd0809e5890c8092e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/imgui",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "external/pmp",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp-Debug-0ef1e353eab7c37ff8f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/pmp",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "external/pmp/visualization",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp.visualization-Debug-06323ffbe710fd1ff2d8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "external/pmp/visualization",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/subdivision",
+					"jsonFile" : "directory-src.subdivision-Debug-2ddd2c83c18f6559241b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/subdivision",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "src/bezier",
+					"jsonFile" : "directory-src.bezier-Debug-53db8054e1a7a3dbea9c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/bezier",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "BezierSubdiv",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-d0b561f00f5fc08e77b6.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@691b517da5fa0f694cd4",
+					"jsonFile" : "target-ALL_BUILD-Debug-ae69f57f17f8ad5b25d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-6cae470dbdefcb69e62d.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "bezier::@e176da5a4d68a80877a9",
+					"jsonFile" : "target-bezier-Debug-cc03af199f4d5416fdc7.json",
+					"name" : "bezier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glew::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glew-Debug-824c4f11ed3dfee83208.json",
+					"name" : "glew",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-glfw-Debug-13b5711f698fcc0cdb3e.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "imgui::@408438dda4a3eccc02b1",
+					"jsonFile" : "target-imgui-Debug-9a4fbb036d49f075229b.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "pmp::@23f78472626e0e4d3e15",
+					"jsonFile" : "target-pmp-Debug-17a86df93be045141431.json",
+					"name" : "pmp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "pmp_vis::@f55943f0ac314c64b061",
+					"jsonFile" : "target-pmp_vis-Debug-56c76562c19321445795.json",
+					"name" : "pmp_vis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@4945d4a35979c2c9c488",
+					"jsonFile" : "target-stb_image-Debug-faf02753a77000e6bc04.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "subdivision::@dedbd054d1db6c0e1df7",
+					"jsonFile" : "target-subdivision-Debug-475232ffed406edebcf3.json",
+					"name" : "subdivision",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-update_mappings-Debug-90fc054a2fbf20fbb4a7.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "external/stb_image",
+					"jsonFile" : "directory-external.stb_image-Release-22e4301351593e9d71bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/stb_image",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "external/glfw",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.glfw-Release-32262a0c72daaba76ac5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/glfw",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "external/glfw/src",
+					"jsonFile" : "directory-external.glfw.src-Release-1c6013c09899f4bbf608.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "external/glfw/src",
+					"targetIndexes" : 
+					[
+						5,
+						11
+					]
+				},
+				{
+					"build" : "external/imgui",
+					"jsonFile" : "directory-external.imgui-Release-8f2cd0809e5890c8092e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/imgui",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "external/pmp",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp-Release-0ef1e353eab7c37ff8f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/pmp",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "external/pmp/visualization",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp.visualization-Release-4b4a15a80ff3be1b6d1b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "external/pmp/visualization",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"jsonFile" : "directory-src-Release-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/subdivision",
+					"jsonFile" : "directory-src.subdivision-Release-2ddd2c83c18f6559241b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/subdivision",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "src/bezier",
+					"jsonFile" : "directory-src.bezier-Release-53db8054e1a7a3dbea9c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/bezier",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "BezierSubdiv",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-d0b561f00f5fc08e77b6.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@691b517da5fa0f694cd4",
+					"jsonFile" : "target-ALL_BUILD-Release-ae69f57f17f8ad5b25d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-6cae470dbdefcb69e62d.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "bezier::@e176da5a4d68a80877a9",
+					"jsonFile" : "target-bezier-Release-13280a2f63b3fc4e7041.json",
+					"name" : "bezier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glew::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glew-Release-d2c86d4d4a2aaa3d3a8e.json",
+					"name" : "glew",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-glfw-Release-2dfbadb4b2bf6b4f82bb.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "imgui::@408438dda4a3eccc02b1",
+					"jsonFile" : "target-imgui-Release-2ac3acbe58f3d8c20dcf.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "pmp::@23f78472626e0e4d3e15",
+					"jsonFile" : "target-pmp-Release-112791ad2e8fd5b850ce.json",
+					"name" : "pmp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "pmp_vis::@f55943f0ac314c64b061",
+					"jsonFile" : "target-pmp_vis-Release-e9b7874d292fef0abc0c.json",
+					"name" : "pmp_vis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@4945d4a35979c2c9c488",
+					"jsonFile" : "target-stb_image-Release-8d5cfacbd462cbf955f6.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "subdivision::@dedbd054d1db6c0e1df7",
+					"jsonFile" : "target-subdivision-Release-12795c0e29b309f82310.json",
+					"name" : "subdivision",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-update_mappings-Release-90fc054a2fbf20fbb4a7.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "external/stb_image",
+					"jsonFile" : "directory-external.stb_image-MinSizeRel-22e4301351593e9d71bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/stb_image",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "external/glfw",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.glfw-MinSizeRel-32262a0c72daaba76ac5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/glfw",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "external/glfw/src",
+					"jsonFile" : "directory-external.glfw.src-MinSizeRel-1c6013c09899f4bbf608.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "external/glfw/src",
+					"targetIndexes" : 
+					[
+						5,
+						11
+					]
+				},
+				{
+					"build" : "external/imgui",
+					"jsonFile" : "directory-external.imgui-MinSizeRel-8f2cd0809e5890c8092e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/imgui",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "external/pmp",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp-MinSizeRel-0ef1e353eab7c37ff8f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/pmp",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "external/pmp/visualization",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp.visualization-MinSizeRel-a910bf038d9340fc97f7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "external/pmp/visualization",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"jsonFile" : "directory-src-MinSizeRel-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/subdivision",
+					"jsonFile" : "directory-src.subdivision-MinSizeRel-2ddd2c83c18f6559241b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/subdivision",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "src/bezier",
+					"jsonFile" : "directory-src.bezier-MinSizeRel-53db8054e1a7a3dbea9c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/bezier",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "BezierSubdiv",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-d0b561f00f5fc08e77b6.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@691b517da5fa0f694cd4",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-ae69f57f17f8ad5b25d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-6cae470dbdefcb69e62d.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "bezier::@e176da5a4d68a80877a9",
+					"jsonFile" : "target-bezier-MinSizeRel-36d51d1c7fa89d1801c1.json",
+					"name" : "bezier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glew::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glew-MinSizeRel-e6f43bd1e28316b0d1d1.json",
+					"name" : "glew",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-glfw-MinSizeRel-33619483191fb8c1ad82.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "imgui::@408438dda4a3eccc02b1",
+					"jsonFile" : "target-imgui-MinSizeRel-bd20147a16755f420158.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "pmp::@23f78472626e0e4d3e15",
+					"jsonFile" : "target-pmp-MinSizeRel-9424ee0af4730485188a.json",
+					"name" : "pmp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "pmp_vis::@f55943f0ac314c64b061",
+					"jsonFile" : "target-pmp_vis-MinSizeRel-5c7058fc9848870fd8f6.json",
+					"name" : "pmp_vis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@4945d4a35979c2c9c488",
+					"jsonFile" : "target-stb_image-MinSizeRel-1190ef3d3d5a3f129e6d.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "subdivision::@dedbd054d1db6c0e1df7",
+					"jsonFile" : "target-subdivision-MinSizeRel-f9f813ee7a366ebb812a.json",
+					"name" : "subdivision",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-update_mappings-MinSizeRel-90fc054a2fbf20fbb4a7.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "external/stb_image",
+					"jsonFile" : "directory-external.stb_image-RelWithDebInfo-22e4301351593e9d71bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/stb_image",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "external/glfw",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-external.glfw-RelWithDebInfo-32262a0c72daaba76ac5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/glfw",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "external/glfw/src",
+					"jsonFile" : "directory-external.glfw.src-RelWithDebInfo-1c6013c09899f4bbf608.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "external/glfw/src",
+					"targetIndexes" : 
+					[
+						5,
+						11
+					]
+				},
+				{
+					"build" : "external/imgui",
+					"jsonFile" : "directory-external.imgui-RelWithDebInfo-8f2cd0809e5890c8092e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/imgui",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "external/pmp",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp-RelWithDebInfo-0ef1e353eab7c37ff8f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external/pmp",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "external/pmp/visualization",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.pmp.visualization-RelWithDebInfo-f04af198bebd87540467.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "external/pmp/visualization",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"jsonFile" : "directory-src-RelWithDebInfo-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/subdivision",
+					"jsonFile" : "directory-src.subdivision-RelWithDebInfo-2ddd2c83c18f6559241b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/subdivision",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "src/bezier",
+					"jsonFile" : "directory-src.bezier-RelWithDebInfo-53db8054e1a7a3dbea9c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.2"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/bezier",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "BezierSubdiv",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-d0b561f00f5fc08e77b6.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@691b517da5fa0f694cd4",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-ae69f57f17f8ad5b25d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-6cae470dbdefcb69e62d.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "bezier::@e176da5a4d68a80877a9",
+					"jsonFile" : "target-bezier-RelWithDebInfo-9b3d9152f489f332630f.json",
+					"name" : "bezier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "glew::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-glew-RelWithDebInfo-b6f650a398df6ab98700.json",
+					"name" : "glew",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-glfw-RelWithDebInfo-5112875c6d9eb85ee0ac.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "imgui::@408438dda4a3eccc02b1",
+					"jsonFile" : "target-imgui-RelWithDebInfo-8fd94860649186d80566.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "pmp::@23f78472626e0e4d3e15",
+					"jsonFile" : "target-pmp-RelWithDebInfo-7e340fffb7bda551e056.json",
+					"name" : "pmp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "pmp_vis::@f55943f0ac314c64b061",
+					"jsonFile" : "target-pmp_vis-RelWithDebInfo-712f7cc9657f8dc16928.json",
+					"name" : "pmp_vis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@4945d4a35979c2c9c488",
+					"jsonFile" : "target-stb_image-RelWithDebInfo-f023dd2d1b7c0e07b697.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "subdivision::@dedbd054d1db6c0e1df7",
+					"jsonFile" : "target-subdivision-RelWithDebInfo-b4a8ca3c74fdcfbb76a7.json",
+					"name" : "subdivision",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ca12bac854c2ac6b2230",
+					"jsonFile" : "target-update_mappings-RelWithDebInfo-90fc054a2fbf20fbb4a7.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/marce/Desktop/cg-bezier-subdivision/build",
+		"source" : "C:/Users/marce/Desktop/cg-bezier-subdivision"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

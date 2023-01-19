@@ -12,3 +12,59 @@ C:\Users\marce\Desktop\cg-bezier-subdivision\build\CMakeFiles\CMakeTmp\CheckIncl
 
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/marce/Desktop/cg-bezier-subdivision/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0b716.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+  Microsoft (R) C/C++-Optimierungscompiler Version 19.34.31937 für x64
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_0b716.dir\Debug\\" /Fd"cmTC_0b716.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\marce\Desktop\cg-bezier-subdivision\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\marce\Desktop\cg-bezier-subdivision\build\CMakeFiles\CMakeTmp\src.c(1,10): fatal  error C1083: Datei (Include) kann nicht geöffnet werden: "pthread.h": No such file or directory [C:\Users\marce\Desktop\cg-bezier-subdivision\build\CMakeFiles\CMakeTmp\cmTC_0b716.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/marce/Desktop/cg-bezier-subdivision/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a0b34.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+  Microsoft (R) C/C++-Optimierungscompiler Version 19.34.31937 für x64
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_a0b34.dir\Debug\\" /Fd"cmTC_a0b34.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: Datei "pthreads.lib" kann nicht geöffnet werden. [C:\Users\marce\Desktop\cg-bezier-subdivision\build\CMakeFiles\CMakeTmp\cmTC_a0b34.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/marce/Desktop/cg-bezier-subdivision/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ffcff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+  Microsoft (R) C/C++-Optimierungscompiler Version 19.34.31937 für x64
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_ffcff.dir\Debug\\" /Fd"cmTC_ffcff.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: Datei "pthread.lib" kann nicht geöffnet werden. [C:\Users\marce\Desktop\cg-bezier-subdivision\build\CMakeFiles\CMakeTmp\cmTC_ffcff.vcxproj]
+
+
+

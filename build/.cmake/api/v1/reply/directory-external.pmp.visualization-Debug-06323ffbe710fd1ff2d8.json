@@ -1,0 +1,70 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"external/pmp/visualization/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Debug/pmp_vis.lib"
+			],
+			"targetId" : "pmp_vis::@f55943f0ac314c64b061",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/pmp/visualization",
+			"paths" : 
+			[
+				"external/pmp/visualization/./ColdWarmTexture.h",
+				"external/pmp/visualization/./GL.h",
+				"external/pmp/visualization/./MatCapShader.h",
+				"external/pmp/visualization/./MeshViewer.h",
+				"external/pmp/visualization/./PhongShader.h",
+				"external/pmp/visualization/./Shader.h",
+				"external/pmp/visualization/./SurfaceMeshGL.h",
+				"external/pmp/visualization/./TrackballViewer.h",
+				"external/pmp/visualization/./Window.h",
+				"external/pmp/visualization/../MatVec.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "external/pmp/visualization",
+		"source" : "external/pmp/visualization"
+	}
+}
