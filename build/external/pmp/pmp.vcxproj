@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x86</PreferredToolArchitecture>
   </PropertyGroup>
@@ -23,8 +23,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9EE8945C-196F-31F7-8F58-D308518F0FF4}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>pmp</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -92,11 +92,11 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\marce\Desktop\cg-bezier-subdivision\external\stb_image;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\deps;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glew\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\imgui;C:\Users\marce\Desktop\cg-bezier-subdivision\external\eigen;C:\Users\marce\Desktop\cg-bezier-subdivision\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -125,13 +125,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\marce\Desktop\cg-bezier-subdivision\external\stb_image;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\deps;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glew\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\imgui;C:\Users\marce\Desktop\cg-bezier-subdivision\external\eigen;C:\Users\marce\Desktop\cg-bezier-subdivision\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -160,13 +160,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\marce\Desktop\cg-bezier-subdivision\external\stb_image;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\deps;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glew\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\imgui;C:\Users\marce\Desktop\cg-bezier-subdivision\external\eigen;C:\Users\marce\Desktop\cg-bezier-subdivision\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -196,11 +196,11 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/models/";SHADER_PATH="C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/";GLEW_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;DATA_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/models/\";SHADER_PATH=\"C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/gl/\";GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\marce\Desktop\cg-bezier-subdivision\external\stb_image;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glfw\deps;C:\Users\marce\Desktop\cg-bezier-subdivision\external\glew\include;C:\Users\marce\Desktop\cg-bezier-subdivision\external\imgui;C:\Users\marce\Desktop\cg-bezier-subdivision\external\eigen;C:\Users\marce\Desktop\cg-bezier-subdivision\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -217,10 +217,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\marce\Desktop\cg-bezier-subdivision\external\pmp\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -233,7 +233,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -246,7 +246,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,7 +259,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/marce/Desktop/cg-bezier-subdivision/external/pmp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/marce/Desktop/cg-bezier-subdivision -BC:/Users/marce/Desktop/cg-bezier-subdivision/build --check-stamp-file C:/Users/marce/Desktop/cg-bezier-subdivision/build/external/pmp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

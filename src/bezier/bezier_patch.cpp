@@ -118,6 +118,20 @@ void Bezier_patch::bounding_box(vec3 &_bbmin, vec3 &_bbmax) const
 
 //------------------------------------------------------------------------------
 
+// das bernstein polynom
+// B_1(t) = (3  i) t^i (1-t)^3-i
+// evaluate i-th Bernsteinpolynom of degree 3 at t
+inline float Bernstein3(unsigned int _i, float _t) {
+    assert(_i < 4);
+    const float b[4] = {1.0, 3.0, 3.0, 1.0}; //die koeffizienten von irgendwas ueber irgendwas
+    return b[_i]* pow(_t, _i) * pow(1.0-_t, 3.0-_i);
+}
+
+inline float Bernstein2(unsigned int _i, float _t) {
+    assert(_i < 3);
+    const float b[3] = {1.0, 3.0, 1.0}; //die koeffizienten von irgendwas ueber irgendwas
+    return b[_i]* pow(_t, _i) * pow(1.0-_t, 3.0-_i);
+}
 
 //------------------------------------------------------------------------------
 
@@ -132,6 +146,7 @@ void Bezier_patch::position_normal(float _u, float _v, vec3 &_p, vec3 &_n) const
      * the cubic Bernstein polynomials \f$ B_i^3 \f$, or the bilinear de
      * Casteljau algorithm dependent on the boolean `use_de_Casteljau`. Compare
      * their performance by using the GUI.
+     * 
      */
 
     vec3 p(0.0);
@@ -139,6 +154,75 @@ void Bezier_patch::position_normal(float _u, float _v, vec3 &_p, vec3 &_n) const
     vec3 dv(0.0);
     vec3 n(0.0);
 
+    if(use_de_Casteljau_) {
+
+        const float u0(1.0-_u), u1(_u);
+        const float v0(1.0-_v), v1(_v);
+        
+        const float u0v0(u0*v0);
+        const float u0v1(u0*v1);
+        const float u1v0(u1*v0);
+        const float u1v1(u1*v1);
+
+        vec3 b[4][4];
+        for(int i=0; i<4; i++) {
+            for(int j=0; j<4; j++) {
+                b[i][j] = control_points_[i][j];
+            }
+        }
+
+        //hier berechnen wir immer diese inneren punkte, gehen dafuer halt k mal durch alle vierecke
+        int i,j,k;
+        for(k = 3; k > 0 ; k--) {
+            if(k==1) {
+                du += (b[1][0] - b[0][0])*v0; 
+                dv += (b[1][1] - b[0][1])*v1;
+                //
+                du += (b[0][1] - b[0][0])*u0; 
+                dv += (b[1][1] - b[1][0])*u1;
+                //
+                n = normalize( cross(du, dv));
+            }
+            for(i = 0; i<k; i++) {
+                for(j = 0; j<k ; j++) {
+                    vec3 pp(0.0);
+                    pp += b[i][j]*u0v0;
+                    pp += b[i+1][j]* u1v0;
+                    pp += b[i][j+1]* u0v1;
+                    pp += b[i+1][j+1]* u1v1;
+                    b[i][j] = pp;
+                }
+            }
+        }
+        p = b[0][0];
+
+
+    } else {
+
+        //evaluate position using Bernstein polynomials n=m=4
+        for(unsigned int i = 0; i<4 ; i++) {
+            for(unsigned int j = 0; j<4 ; j++) {
+                p += control_points_[i][j]* Bernstein3(i, _u) * Bernstein3(j,_v);
+            }
+        }
+
+        // derivative in u
+        for(unsigned int i = 0; i<3 ; i++) {
+            for(unsigned int j = 0; j<4 ; j++) {
+                du += (control_points_[i+1][j]  - control_points_[i][j])* Bernstein2(i, _u) * Bernstein3(j,_v);
+            }
+        }
+
+
+        // derivative in v
+        for(unsigned int i = 0; i<4 ; i++) {
+            for(unsigned int j = 0; j<3 ; j++) {
+                dv += (control_points_[i][j+1] - control_points_[i][j])* Bernstein3(i, _u) * Bernstein2(j,_v);
+            }
+        }
+
+        n = normalize(cross(du, dv));
+    }
 
     // copy resulting position and normal to output variables
     _p = p;
